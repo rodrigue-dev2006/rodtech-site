@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rodrigue - Mon site</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>RODTECH</h1>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="accueil">
+            <img src="logo.png" alt="Logo RODTECH" class="logo">
+            <h2>Bienvenue sur mon site</h2>
+            <p>
+                Bonjour, je suis Rodrigue.
+                Je suis passionné par l'informatique 
+Nous sommes ravis de vous accueillir ici. Explorez, découvrez et laissez-vous inspirer. Merci de faire partie de notre aventure.
+            </p>
+        </section>
+
+        <section id="apropos">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis en train d'apprendre la programmation
+                et la création de sites web.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Mes services</h2>
+
+            <ul>
+                <li>Création de sites web</li>
+                <li>Maintenance informatique</li>
+                <li>Assistance informatique</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+    <h2>Contactez-moi</h2>
+<button onclick="direBonjour()">Clique ici</button>
+    <form>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" placeholder="Votre nom">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Votre adresse email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Votre message"></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+        </section>
+
+    </main>
+    <section id="calculatrice">
+
+    <h2>Ma calculatrice</h2>
+
+    <input type="number" id="nombre1" placeholder="Premier nombre">
+
+    <input type="number" id="nombre2" placeholder="Deuxième nombre">
+
+    <br><br>
+
+    <button onclick="additionner()">+</button>
+    <button onclick="soustraire()">−</button>
+    <button onclick="multiplier()">×</button>
+    <button onclick="diviser()">÷</button>
+
+    <h3 id="resultat">Résultat : </h3>
+
+</section>
+    <footer>
+        <p>© 2026 RODTECH - Tous droits réservés.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
+<a href="#contact" class="btn">Me contacter</a>
