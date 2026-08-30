@@ -1,41 +1,38 @@
-function direBonjour() {
-    alert("Bonjour ! Bienvenue sur mon site 
-    RODTECH 🚀");
-}
-function additionner() {
-    let a = Number(document.getElementById("nombre1").value);
-    let b = Number(document.getElementById("nombre2").value);
+// Message de bienvenue dans la console
+console.log("Bienvenue sur RodTech 🚀");
 
-    document.getElementById("resultat").textContent =
-        "Résultat : " + (a + b);
-}
+// Animation douce lors du clic sur les liens du menu
+document.querySelectorAll("nav a").forEach(function(lien) {
+    lien.addEventListener("click", function(e) {
+        e.preventDefault();
 
-function soustraire() {
-    let a = Number(document.getElementById("nombre1").value);
-    let b = Number(document.getElementById("nombre2").value);
+        const destination = document.querySelector(
+            this.getAttribute("href")
+        );
 
-    document.getElementById("resultat").textContent =
-        "Résultat : " + (a - b);
-}
+        if (destination) {
+            destination.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
 
-function multiplier() {
-    let a = Number(document.getElementById("nombre1").value);
-    let b = Number(document.getElementById("nombre2").value);
+// Petit effet sur les cartes de services
+document.querySelectorAll(".carte").forEach(function(carte) {
+    carte.addEventListener("click", function() {
+        this.style.transform = "scale(1.03)";
 
-    document.getElementById("resultat").textContent =
-        "Résultat : " + (a * b);
-}
+        setTimeout(function() {
+            carte.style.transform = "scale(1)";
+        }, 200);
+    });
+});
 
-function diviser() {
-    let a = Number(document.getElementById("nombre1").value);
-    let b = Number(document.getElementById("nombre2").value);
+// Affichage automatique de l'année dans le pied de page
+const annee = new Date().getFullYear();
+const footer = document.querySelector("footer p");
 
-    if (b === 0) {
-        document.getElementById("resultat").textContent =
-            "Impossible de diviser par zéro";
-        return;
-    }
-
-    document.getElementById("resultat").textContent =
-        "Résultat : " + (a / b);
-}
+if (footer) {
+    footer.textContent = "© " + annee + " RodTech - Tous droits réservés.";
+        }
