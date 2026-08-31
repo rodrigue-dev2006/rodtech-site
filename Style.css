@@ -212,3 +212,43 @@ footer {
 .competence p {
     line-height: 1.6;
 }
+#pourquoi {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#pourquoi h2 {
+    margin-bottom: 30px;
+}
+
+.pourquoi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.raison {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.raison:hover {
+    transform: translateY(-5px);
+}
+
+.raison span {
+    font-size: 40px;
+}
+
+.raison h3 {
+    margin: 15px 0 10px;
+}
+
+.raison p {
+    line-height: 1.6;
+}
