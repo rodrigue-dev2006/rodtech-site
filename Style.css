@@ -172,3 +172,43 @@ footer {
         padding: 40px 20px;
     }
 }
+#competences {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#competences h2 {
+    margin-bottom: 30px;
+}
+
+.competences-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.competence {
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.competence:hover {
+    transform: translateY(-5px);
+}
+
+.competence span {
+    font-size: 40px;
+}
+
+.competence h3 {
+    margin: 15px 0 10px;
+}
+
+.competence p {
+    line-height: 1.6;
+}
