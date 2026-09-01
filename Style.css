@@ -284,3 +284,10 @@ footer {
 .stat p {
     margin: 5px 0 0;
 }
+.stat {
+    transition: transform 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+}
