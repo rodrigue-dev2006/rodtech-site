@@ -309,3 +309,22 @@ nav a {
 nav a:hover {
     transform: translateY(-3px);
 }
+nav {
+    background: #0d47a1;
+    padding: 12px 10px;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    background: #1976d2;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: white;
+    color: #0d47a1;
+    transform: translateY(-2px);
+}
