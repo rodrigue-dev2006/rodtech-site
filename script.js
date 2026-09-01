@@ -36,3 +36,6 @@ const footer = document.querySelector("footer p");
 if (footer) {
     footer.textContent = "© " + annee + " RodTech - Tous droits réservés.";
         }
+function modeSombre() {
+    document.body.classList.toggle("dark-mode");
+}
