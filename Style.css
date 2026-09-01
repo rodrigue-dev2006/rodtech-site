@@ -328,3 +328,11 @@ nav a:hover {
     color: #0d47a1;
     transform: translateY(-2px);
 }
+.apropos-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    }
