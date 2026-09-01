@@ -350,3 +350,19 @@ nav a:hover {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .carte,
+.dark-mode .stat,
+.dark-mode .publication {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+    color: white;
+    }
