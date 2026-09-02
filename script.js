@@ -52,3 +52,8 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
     observer.observe(section);
 });
+const message = document.getElementById("message-bienvenue");
+
+if (message) {
+    message.textContent = "Bienvenue sur RODTECH 🚀";
+}
