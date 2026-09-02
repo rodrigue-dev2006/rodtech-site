@@ -393,3 +393,18 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
     }
+.titre-accueil {
+    animation: apparition 1.5s ease;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
