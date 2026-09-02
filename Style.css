@@ -414,3 +414,8 @@ nav {
     flex-wrap: wrap;
     gap: 10px;
 }
+nav a {
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+}
