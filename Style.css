@@ -408,3 +408,9 @@ section.visible {
         transform: translateY(0);
     }
 }
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
