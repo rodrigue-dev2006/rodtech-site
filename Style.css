@@ -486,3 +486,11 @@ nav a {
         right: 15px;
     }
 }
+nav a {
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
