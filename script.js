@@ -57,3 +57,15 @@ const message = document.getElementById("message-bienvenue");
 if (message) {
     message.textContent = "Bienvenue sur RODTECH 🚀";
 }
+const heure = new Date().getHours();
+const messageBienvenue = document.getElementById("message-bienvenue");
+
+if (messageBienvenue) {
+    if (heure < 12) {
+        messageBienvenue.textContent = "🌅 Bonjour et bienvenue sur RODTECH 🚀";
+    } else if (heure < 18) {
+        messageBienvenue.textContent = "☀️ Bon après-midi et bienvenue sur RODTECH 🚀";
+    } else {
+        messageBienvenue.textContent = "🌙 Bonsoir et bienvenue sur RODTECH 🚀";
+    }
+}
