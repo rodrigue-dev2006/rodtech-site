@@ -52,15 +52,11 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
     observer.observe(section);
 });
-const message = document.getElementById("message-bienvenue");
-
-if (message) {
-    message.textContent = "Bienvenue sur RODTECH 🚀";
-}
-const heure = new Date().getHours();
 const messageBienvenue = document.getElementById("message-bienvenue");
 
 if (messageBienvenue) {
+    const heure = new Date().getHours();
+
     if (heure < 12) {
         messageBienvenue.textContent = "🌅 Bonjour et bienvenue sur RODTECH 🚀";
     } else if (heure < 18) {
