@@ -65,3 +65,19 @@ if (messageBienvenue) {
         messageBienvenue.textContent = "🌙 Bonsoir et bienvenue sur RODTECH 🚀";
     }
 }
+const compteurs = document.querySelectorAll(".compteur");
+
+compteurs.forEach((compteur) => {
+    const cible = Number(compteur.dataset.cible);
+    let nombre = 0;
+
+    const animation = setInterval(() => {
+        nombre++;
+        compteur.textContent =
+            nombre + (cible === 100 ? "%" : "+");
+
+        if (nombre >= cible) {
+            clearInterval(animation);
+        }
+    }, 30);
+});
