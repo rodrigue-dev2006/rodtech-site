@@ -541,3 +541,17 @@ footer {
 footer p {
     margin: 8px 0;
 }
+/* Amélioration des services */
+#services .carte {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .carte:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+#services .carte h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
